@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../registrPage/css/regStyle.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/reg">
+            <h1>Регистрация пользователя</h1>
+            <div class="field">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="ФИО">
+            </div>
+            <div class="field">
+                <label for="username"></label>
+                <input type="text" name="username" id="username" placeholder="Логин">
+            </div>
+            <div class="field">
+                <label for="phoneNumber"></label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Номер Телефона">
+            </div>
+            <div class="field">
+                <label for="clinic"></label>
+                <select name="clinic" id="clinic">
+                    <option value="polyclinic9">Городская поликлиника №9</option>
+                    <option value="polyclinic1">Городская поликлиника №1</option>
+                    <option value="polyclinic2">Городская поликлиника №2</option>
+                    <option value="polyclinic6">Городская поликлиника №6</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Пароль">
+            </div>
+            <div class="field">
+                <input type="submit" name="btn" id="btn" value="Зарегистрироваться">
+            </div>
+            <a href="./../authPage/index.html">Уже есть аккаунт? Вход</a>
+        </form>
+    </div>
+</body>
+</html>
