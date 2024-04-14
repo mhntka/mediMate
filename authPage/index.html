@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action='/login'>
+            <h1>Авторизация</h1>
+            <div class="field">
+                <label for='username'>
+                    Логин или номер 
+                </label>
+                <input type='text' id='text' name='number' placeholder="Логин или номер"><br>
+            </div>
+            <div class="field">
+                <label for='password'>
+                    Пароль
+                </label>
+                <input type='password' id='password' name='password' placeholder="Пароль"><br>
+            </div>
+            <div class="field">
+                <input type='submit' id="btn" value='Войти'>
+            </div>
+
+            <a href="./../registrPage/regIndex.html" class="registr">Регистрация</a>
+        </form>
+        <script src="scripts.js"></script>
+      
+    </div>
+</body>
+</html>
