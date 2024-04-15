@@ -6,19 +6,20 @@ body{
 }
 
 .header {
-    display: flex;
+    display: flex; 
     align-items: center;
     position: relative;
     z-index: 10;
 
     width: 100%; /* Заголовок на всю ширину экрана */
-    height: 70px;
+    height: 70px; /* Высота в 70 пикс */
 
     background-color: #2E7D32;
     padding-left: 60px;
+    box-shadow: 0 4px 4px #9c9c9c;
 }
 
-.sidebar {
+  .sidebar {
     z-index: 5;
     position: fixed;   /* Фиксирует сайдбар на одном месте */
     top: 1;            /* Прикрепляет сайдбар к верхней части страницы */
@@ -29,20 +30,69 @@ body{
     overflow-y: auto;  /* Добавляет вертикальную полосу прокрутки при необходимости */
     background-color: #F1F1F1; /* Цвет фона сайдбара */
     padding-top: 20px; /* Отступ сверху внутри сайдбара */
-  }
+}
   
-  /* Стили для ссылок внутри сайдбара */
-  .sidebar a {
+.sidebar a {
     display: block;
-    padding: 13px 8px 13px 16px;
+    padding: 13px 0 13px 44px;
 
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
     color: #646464;
     
-  }
+}
   
-  .sidebar a:hover {
+.sidebar a:hover {
     background-color: #E6E6E6; /* Цвет ссылок при наведении */
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Равномерное распределение карточек по горизонтали */
+  align-items: center; /* Выравнивание карточек по верхнему краю */
+  gap: 20px; /* Пространство между карточками */
+  margin-left: 491px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 281px;
+  width: 281px;
+  margin-top: 45px;
+  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Добавляем тень для карточек */
+  border-radius: 8px;
+}
+
+.card a {
+  padding-top: 15px;
+  text-align: center;  
+}
+
+.card p {
+  padding-top: 15px;
+
+  color: #71A674;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card :hover{
+
+  color: #2E7D32;
+}
+
+/* Медиа-запросы могут быть использованы для адаптации под мобильные устройства */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 100%; /* На маленьких экранах карточки занимают всю ширину */
   }
+}
+
+
