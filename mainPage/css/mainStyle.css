@@ -1,3 +1,48 @@
 @import url(./../../reset/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+    width: 100%; /* Заголовок на всю ширину экрана */
+    height: 70px;
+
+    background-color: #2E7D32;
+    padding-left: 60px;
+}
+
+.sidebar {
+    z-index: 5;
+    position: fixed;   /* Фиксирует сайдбар на одном месте */
+    top: 1;            /* Прикрепляет сайдбар к верхней части страницы */
+    left: 0;           /* Прикрепляет сайдбар к левой стороне страницы */
+    width: 405px;      /* Ширина сайдбара */
+    height: 100%;      /* Высота сайдбара занимает всю высоту страницы */
+    overflow-x: hidden; /* Прячет горизонтальную полосу прокрутки */
+    overflow-y: auto;  /* Добавляет вертикальную полосу прокрутки при необходимости */
+    background-color: #F1F1F1; /* Цвет фона сайдбара */
+    padding-top: 20px; /* Отступ сверху внутри сайдбара */
+  }
+  
+  /* Стили для ссылок внутри сайдбара */
+  .sidebar a {
+    display: block;
+    padding: 13px 8px 13px 16px;
+
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #646464;
+    
+  }
+  
+  .sidebar a:hover {
+    background-color: #E6E6E6; /* Цвет ссылок при наведении */
+  }
